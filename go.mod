@@ -5,7 +5,7 @@ go 1.21.0
 require gorm.io/gorm v1.25.10
 
 require (
-	github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240501071747-7a0f3755bf00 // indirect
+	github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240506042427-2e361ddf1ac4 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
 	github.com/jackc/pgx/v5 v5.4.3 // indirect
@@ -18,6 +18,7 @@ require (
 )
 
 require (
+	github.com/google/uuid v1.6.0
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/joho/godotenv v1.5.1

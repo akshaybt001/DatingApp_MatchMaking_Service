@@ -1,6 +1,14 @@
 github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240501071747-7a0f3755bf00 h1:wjkZ0eXImip1JndxrLJugc/C7AzgQZRCR5kqyvT/hvg=
 github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240501071747-7a0f3755bf00/go.mod h1:EKOdpztFR9PTElv1a5A5BGveqz4zhXCyoGI6xfYSBSg=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240505061227-d4ef1f547c63 h1:ThSNhC/79T6y91lnaWQj9zmarFQPGGrC2ssPSlCiPrk=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240505061227-d4ef1f547c63/go.mod h1:EKOdpztFR9PTElv1a5A5BGveqz4zhXCyoGI6xfYSBSg=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240505121713-e8d7bc3cc5d2 h1:HmwTIrsXY4Kdf1yto3dsZQdp5G6BWv3TNyGsPO2XVYw=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240505121713-e8d7bc3cc5d2/go.mod h1:EKOdpztFR9PTElv1a5A5BGveqz4zhXCyoGI6xfYSBSg=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240506042427-2e361ddf1ac4 h1:cOhsyAz98jZTXZYCInfrbzu3Q4uK6eX3C2YJzjOjQ5w=
+github.com/akshaybt001/DatingApp_proto_files v0.0.0-20240506042427-2e361ddf1ac4/go.mod h1:EKOdpztFR9PTElv1a5A5BGveqz4zhXCyoGI6xfYSBSg=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/jackc/pgpassfile v1.0.0 h1:/6Hmqy13Ss2zCq62VdNG8tM1wchn8zjSGOBJ6icpsIM=
 github.com/jackc/pgpassfile v1.0.0/go.mod h1:CEx0iS5ambNFdcRtxPj5JhEz+xB6uRky5eyVu/W2HEg=
 github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a h1:bbPeKD0xmW/Y25WS6cokEszi5g+S0QxI/d45PkRi7Nk=

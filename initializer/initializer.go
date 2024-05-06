@@ -6,9 +6,9 @@ import (
 	"gorm.io/gorm"
 )
 
-func Initializer(db *gorm.DB)*service.MatchService{
-	repo:=adapters.NewMatchAdapter(db)
-	service:=service.NewMatchService(repo)
-	
+func Initializer(db *gorm.DB) *service.MatchService {
+	repo := adapters.NewMatchAdapter(db)
+	service := service.NewMatchService(repo, "localhost:8081")
+
 	return service
 }
