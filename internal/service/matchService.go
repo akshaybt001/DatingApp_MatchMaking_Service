@@ -73,3 +73,36 @@ func (m *MatchService) Like(ctx context.Context, req *pb.LikeRequest) (*pb.NoPar
 	return nil, nil
 }
 
+func (m *MatchService) GetMatch(req *pb.GetByUserId, srv pb.MatchService_GetMatchServer) error {
+
+	matches, err := m.adapters.GetMatch(req.Id)
+	if err != nil {
+		return err
+	}
+	for _, match := range matches {
+		res := &pb.MatchResposne{
+			Id:      match.Id,
+			MatchId: match.MatchId,
+			UserId:  match.UserId,
+		}
+		if err := srv.Send(res); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (m *MatchService) UnMatch(ctx context.Context, req *pb.GetByUserId) (*pb.NoPara, error) {
+	match, err := m.adapters.IsMatchExist(req.Id)
+	if err != nil {
+		return nil, err
+	}
+	if !match {
+		return nil, fmt.Errorf("cannot unmatch as it is not matched user")
+	}
+	err = m.adapters.UnMatch(req.Id)
+	if err != nil {
+		return nil, err
+	}
+	return nil, nil
+}
