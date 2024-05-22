@@ -3,6 +3,7 @@ package adapters
 import (
 	"time"
 
+	"github.com/akshaybt001/DatingApp_MatchMaking_Service/entities"
 	helperstruct "github.com/akshaybt001/DatingApp_MatchMaking_Service/entities/helperStruct"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
@@ -65,4 +66,13 @@ func (m *MatchAdapter) IsMatchExist(id string) (bool, error) {
 		return false, err
 	}
 	return count > 0, nil
+}
+
+func (m *MatchAdapter) FindWhoLikesUser(id string)([]entities.Likes,error){
+	var res []entities.Likes
+	selectUserlikes:=`SELECT * FROM likes WHERE liked_id=?`
+	if err:=m.DB.Raw(selectUserlikes,id).Scan(&res).Error;err!=nil{
+		return []entities.Likes{},nil
+	}
+	return res,nil
 }

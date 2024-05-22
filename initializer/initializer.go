@@ -8,7 +8,7 @@ import (
 
 func Initializer(db *gorm.DB) *service.MatchService {
 	repo := adapters.NewMatchAdapter(db)
-	service := service.NewMatchService(repo, "localhost:8081")
+	service := service.NewMatchService(repo, "localhost:8081", "localhost:8083")
 
 	return service
 }

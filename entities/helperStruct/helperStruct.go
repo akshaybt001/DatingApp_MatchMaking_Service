@@ -5,3 +5,7 @@ type Match struct {
 	UserId  string
 	MatchId string
 }
+
+type Userlikes struct {
+	Id string
+}
